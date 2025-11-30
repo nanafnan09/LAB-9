@@ -40,3 +40,25 @@ project/
     └── css/
         └── style.css       # File CSS eksternal untuk styling
 ```
+📝 Penjelasan Kode & Logika Modular
+1. Routing (index.php)
+File ini berfungsi sebagai Router. Semua permintaan halaman melewati file ini. Logikanya adalah memeriksa parameter page di URL (contoh: ?page=user/list).
+
+Jika page ada, sistem akan memanggil file yang sesuai dari folder modules/.
+
+File header.php dan footer.php dimuat secara otomatis di setiap halaman, sehingga kita tidak perlu menulis ulang struktur HTML dasar berulang kali.
+
+2. Konfigurasi Database (config/database.php)
+File ini menyimpan kredensial database (host, user, password, nama db). Dengan memisahkannya, jika ada perubahan konfigurasi database, kita hanya perlu mengubah satu file ini saja.
+
+3. Modul View (views/)
+header.php: Berisi deklarasi <!DOCTYPE html>, tag <head> (termasuk link CSS), dan menu navigasi.
+
+footer.php: Berisi penutup </body> dan </html>.
+
+4. Modul Konten (modules/)
+Folder ini berisi inti dari fitur aplikasi.
+
+user/list.php: Berisi kode PHP untuk mengambil data dari database dan menampilkannya dalam bentuk tabel HTML. File ini tidak memiliki tag <html> pembuka karena sudah disedikan oleh header.php.
+
+auth/login.php: Menangani proses autentikasi user (Login) menggunakan Session PHP.
