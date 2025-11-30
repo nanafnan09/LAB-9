@@ -62,3 +62,23 @@ Folder ini berisi inti dari fitur aplikasi.
 user/list.php: Berisi kode PHP untuk mengambil data dari database dan menampilkannya dalam bentuk tabel HTML. File ini tidak memiliki tag <html> pembuka karena sudah disedikan oleh header.php.
 
 auth/login.php: Menangani proses autentikasi user (Login) menggunakan Session PHP.
+
+📸 Tangkapan Layar (Screenshots)
+Berikut adalah hasil tampilan dari aplikasi yang telah dibuat:
+
+1. Halaman Login
+Halaman ini adalah gerbang masuk aplikasi. Pengguna harus memasukkan username dan password yang valid.
+
+![foto](https://github.com/nanafnan09/LAB-9/blob/64088a18abbc8be1dd9c64f3a5d47bef365604c1/Lab%209%20Image/Cuplikan%20layar%202025-11-30%20153342.png)
+
+2. Dashboard
+Halaman utama setelah pengguna berhasil login.
+
+![foto](https://github.com/nanafnan09/LAB-9/blob/64088a18abbc8be1dd9c64f3a5d47bef365604c1/Lab%209%20Image/Cuplikan%20layar%202025-11-30%20153357.png)
+
+3. Daftar Data Barang (CRUD)
+Halaman ini menampilkan data dari database, serta menyediakan tombol untuk menambah, mengubah, dan menghapus data.
+
+Dibuat sebagai tugas Praktikum Pemrograman Web - Universitas Pelita Bangsa
+
+![foto](https://github.com/nanafnan09/LAB-9/blob/64088a18abbc8be1dd9c64f3a5d47bef365604c1/Lab%209%20Image/Cuplikan%20layar%202025-11-30%20153411.png)
